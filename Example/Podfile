@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AJCommonUtils_Example' do
+  pod 'AJCommonUtils', :path => '../'
+
+  target 'AJCommonUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - AJCommonUtils (0.1.0)
+
+DEPENDENCIES:
+  - AJCommonUtils (from `../`)
+
+EXTERNAL SOURCES:
+  AJCommonUtils:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AJCommonUtils: 8af95a56fd1d5ff8fe04364a301ae833083d4cc8
+
+PODFILE CHECKSUM: 60ef9b0a14abc28b29068c3cfc5efb198cd3f45c
+
+COCOAPODS: 1.4.0

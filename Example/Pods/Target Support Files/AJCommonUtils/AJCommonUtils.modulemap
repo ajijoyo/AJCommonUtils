@@ -1,0 +1,6 @@
+framework module AJCommonUtils {
+  umbrella header "AJCommonUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_AJCommonUtils_Tests {
+  umbrella header "Pods-AJCommonUtils_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
