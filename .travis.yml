@@ -9,5 +9,5 @@ xcode_project: Example/AJCommonUtils.xcworkspace # path to your xcodeproj folder
 xcode_scheme: AJCommonUtils-Example
 xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
 script:
-# - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/AJCommonUtils.xcworkspace -scheme AJCommonUtils-Example -sdk iphonesimulator11.4 ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild -workspace AJCommonUtils.xcworkspace -scheme AJCommonUtils-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 - pod lib lint
