@@ -7,6 +7,10 @@
 //  Copyright © 2017 Ajiejoy. All rights reserved.
 
 
+extension Notification.Name {
+    static let languageDidChanged = Notification.Name("AJCommonUtils.language-did-changed")
+}
+
 public class Language {
     
     //default is english
@@ -20,6 +24,10 @@ public class Language {
     }
     
     public static func setLocale(language : String){
+        if let selected = getSelectedLocale {
+            if language == selected { return }
+        }
+        NotificationCenter.default.post(name: .languageDidChanged, object: nil)
         Bundle.setLanguage(language)
     }
     

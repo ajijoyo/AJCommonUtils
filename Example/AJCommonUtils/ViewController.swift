@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Language.setLocale(language: "id")
+        
+        UIColor().darker()
     }
 
     override func didReceiveMemoryWarning() {
