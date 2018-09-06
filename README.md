@@ -31,7 +31,8 @@ pod 'AJCommonUtils'
 
 Set `setDefaultLocale` at `didFinishLaunchingWithOptions` to initial Bundle spesific Language on first install 
 by default value is `en` you should change prefered default language,
-> Make sure you have settings `Localized.strings`
+> Make sure you have settings `Localized.strings`  
+> Everytime locale change you can observer using `NotificationCenter` with key `languageDidChanged`
 ```swift
 Language.setDefaultLocale(language: "id")
 ```
@@ -41,14 +42,14 @@ function `setLocale` to set Bundle to spesific Language on runtime, non need to 
 ```swift
 Language.setLocale(language: "en")
 ```
-
+  
 function `localized` to change Language based on `Localized.Strings` with selected `setLocale`
 ```swift
 let title = "welcome.example.title".localized
 
 titleLabel.text = title
 ```
-
+  
 ### Color
 
 init color by hexString,by default `alpha` is 1.0 it value start from 0 to 1.0
