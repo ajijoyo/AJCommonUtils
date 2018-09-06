@@ -49,6 +49,31 @@ let title = "welcome.example.title".localized
 titleLabel.text = title
 ```
 
+### Color
+
+init color by hexString,by default `alpha` is 1.0 it value start from 0 to 1.0
+
+```swift
+UIColor(hexString: #ffffff, alpha: 0.5)
+````
+
+init color by RGB, by default `alpha` is 1.0 it value start from 0 to 1.0
+```swift
+UIColor(R: 255, G: 255, B: 255, alpha: 0.4)
+```
+
+extension of UIColor `lighter` change color more lighter not change alpha, default is 0.3 it value start from 0 to 1.0
+
+```swift
+UIColor.black.lighter(by: 0.3)
+```
+
+extension of UIColor `darker` change color more darker not change alpha, default is 0.3 it value start from 0 to 1.0
+
+```swift
+UIColor.black.darker(by: 0.3)
+```
+
 ## Author
 
 ajijoyo, self.ajiejoy@gmail.com
