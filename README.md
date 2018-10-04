@@ -1,6 +1,6 @@
 # AJCommonUtils
 
-[![Language](https://img.shields.io/badge/Swift-4-orange.svg)]()
+[![Language](https://img.shields.io/badge/Swift-4.2-orange.svg)]()
 [![CI Status](https://img.shields.io/travis/ajijoyo/AJCommonUtils.svg?style=flat)](https://travis-ci.org/ajijoyo/AJCommonUtils)
 [![Version](https://img.shields.io/cocoapods/v/AJCommonUtils.svg?style=flat)](https://cocoapods.org/pods/AJCommonUtils)
 [![License](https://img.shields.io/cocoapods/l/AJCommonUtils.svg?style=flat)](https://cocoapods.org/pods/AJCommonUtils)
