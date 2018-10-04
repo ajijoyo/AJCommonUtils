@@ -8,6 +8,7 @@
 
 public extension UIDevice {
     
+    /// Detect if is Current Device is Iphone x
     static var isIphoneX: Bool {
         var modelIdentifier = ""
         if isSimulator {

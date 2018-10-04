@@ -9,14 +9,12 @@
 
 public extension UIColor {
 
-    /**
-     Create Color
-     - Parameter :
-        - hexString : String of Hex
-        - alpha: CGFloat of Alpha from 0.0 to 1.0 (default is 1.0)
-     - Return :
-        UIColor Object
-     */
+  
+    /// Create Color From Hex String
+    ///
+    /// - Parameters:
+    ///   - hexString: Hex String "#FFFFFF" or "FFFFFF" directly
+    ///   - alpha: CGFloat of Alpha from 0.0 to 1.0 (default is 1.0)
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
         let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
@@ -39,26 +37,20 @@ public extension UIColor {
         self.init(red:CGFloat(R/255), green:CGFloat(G/255), blue:CGFloat(B/255), alpha:alpha)
     }
     
-    /**
-     Create lighter Color.
-     - Parameters :
-        - percentage : CGFloat of percentage = 0.0 to 1.0 (default is 0.3)
-     
-     - Return :
-     UIColor Object
-     */
+    
+    /// Create lighter Color.
+    ///
+    /// - Parameter percentage: CGFloat of percentage = 0.0 to 1.0 (default is 0.3)
+    /// - Returns: lighter Color.
     func lighter(by percentage: CGFloat = 0.3) -> UIColor {
         return self.adjust(by: abs(percentage) )
     }
     
-    /**
-     Create darker Color.
-     - Parameters :
-     - percentage : CGFloat of percentage = 0.0 to 1.0 (default is 0.3)
-     
-     - Return :
-     UIColor Object
-     */
+    
+    /// Create darker Color.
+    ///
+    /// - Parameter percentage: CGFloat of percentage = 0.0 to 1.0 (default is 0.3)
+    /// - Returns: Darket Color
     func darker(by percentage: CGFloat = 0.3) -> UIColor {
         return self.adjust(by: -1 * abs(percentage) )
     }
@@ -75,6 +67,7 @@ public extension UIColor {
         }
     }
     
+    /// return Color to Hex String #FFFFFF
     var toHexString : String {
         var r:CGFloat = 0
         var g:CGFloat = 0

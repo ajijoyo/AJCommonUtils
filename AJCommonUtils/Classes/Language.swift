@@ -13,7 +13,11 @@ extension Notification.Name {
 
 public class Language {
     
-    //default is english
+    
+    /// Set default language by default is "en"
+    /// You can observer change Language with *languageDidChanged* NotificationCenter
+    ///
+    /// - Parameter language: fill with local identifier, Just Remember add localized.string before apply your custom language
     public static func setDefaultLocale(language : String = "en"){
         if let locale = getSelectedLocale {
             setLocale(language: locale)

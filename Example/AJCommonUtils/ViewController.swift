@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIColor.gray.darker()
         
-        UIColor().darker()
     }
 
     override func didReceiveMemoryWarning() {

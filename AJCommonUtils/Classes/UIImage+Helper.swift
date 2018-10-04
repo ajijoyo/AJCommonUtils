@@ -9,6 +9,9 @@
 
 extension UIImage {
     
+    /// Create QRCode
+    ///
+    /// - Parameter QRcode: String of QR Code
     convenience init(QRcode: String){
         guard let data = QRcode.data(using: .isoLatin1) else {
             self.init()
@@ -22,6 +25,10 @@ extension UIImage {
         self.init(ciImage: img!)
     }
     
+    /// Change Color of Image
+    ///
+    /// - Parameter color: UIColor
+    /// - Returns: Create New Image With Color
     func tintColor(color:UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale);
         let context = UIGraphicsGetCurrentContext();
@@ -44,6 +51,10 @@ extension UIImage {
         return coloredImage;
     }
     
+    /// Create New Image with New Size with porpotial ratio
+    ///
+    /// - Parameter width: CGFloat value
+    /// - Returns: New Image with porpotional size
     func resize(width:CGFloat) -> UIImage?{
         let scale = width / self.size.width
         let height = self.size.height * scale
