@@ -15,7 +15,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UIColor.gray.darker()
+        _ = UIColor.gray.darker(by: 0.4)
+        
+        if UIDevice.isIphoneX {
+            print("iphone x")
+        }
+        
+        let image = UIImage(QRcode: "qrcode")
+        image.tintColor(color: .red)
         
     }
 

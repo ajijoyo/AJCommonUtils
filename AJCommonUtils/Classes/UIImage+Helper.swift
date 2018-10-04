@@ -7,7 +7,7 @@
 //  Copyright © 2017 Ajiejoy. All rights reserved.
  
 
-extension UIImage {
+public extension UIImage {
     
     /// Create QRCode
     ///
