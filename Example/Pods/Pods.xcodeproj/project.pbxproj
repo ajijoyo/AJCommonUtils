@@ -16,6 +16,7 @@
 		62A06E1716B64C6F4EA059D24F44DF0A /* Pods-AJCommonUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 522A1FCF700A3570221A05ADC80FA682 /* Pods-AJCommonUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7961227445A111CF8840D390D9395393 /* AJCommonUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE36BA25618057F61065E3653A5ED4 /* AJCommonUtils-dummy.m */; };
 		7ADF44FAA12F535D40E7CA89F52AFE21 /* Pods-AJCommonUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ED81E171C521A53CDE1C8C5CB0F118 /* Pods-AJCommonUtils_Tests-dummy.m */; };
+		89C8FE3321DE52F6007EA561 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C8FE3221DE52F6007EA561 /* UIView+Helper.swift */; };
 		8FAD720105419635126866868F666906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A15ED17CB668CE0D519D5E476FB04653 /* Pods-AJCommonUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 261B218C5AB98287D17E490EE7389FDF /* Pods-AJCommonUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C25BB9F5E03A19C9DB7420C1BCA04325 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF703386F4B4ABCF49232524F8B3318F /* UIImage+Helper.swift */; };
@@ -54,6 +55,7 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7F851E84FF64B820758C201B4AE47074 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87FD34D558A787B33E593F3C3215FCFA /* Pods-AJCommonUtils_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AJCommonUtils_Example-resources.sh"; sourceTree = "<group>"; };
+		89C8FE3221DE52F6007EA561 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Helper.swift"; path = "AJCommonUtils/Classes/UIView+Helper.swift"; sourceTree = "<group>"; };
 		8A43B07F44C6CF1BAE32D5331B75AF6E /* Pods_AJCommonUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AJCommonUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9065F3BE23E66504915B2409F8832741 /* Pods-AJCommonUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AJCommonUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -201,6 +203,7 @@
 				A63ED872C34C9E835B2BC65BFFBF8622 /* UIColor+Helper.swift */,
 				20C306B16BF06E3992F20D5FA08544D6 /* UIDevice+Helper.swift */,
 				AF703386F4B4ABCF49232524F8B3318F /* UIImage+Helper.swift */,
+				89C8FE3221DE52F6007EA561 /* UIView+Helper.swift */,
 				E422E9CE37F7A615B02FAA9937AF1290 /* Pod */,
 				5CAEDCCB95DA7DCE1EE2AFA4EE8A58F6 /* Support Files */,
 			);
@@ -364,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C8FE3321DE52F6007EA561 /* UIView+Helper.swift in Sources */,
 				7961227445A111CF8840D390D9395393 /* AJCommonUtils-dummy.m in Sources */,
 				096D762BE808D1EBBF5059EE2679ACF0 /* BundleLanguage.m in Sources */,
 				CCD696E3AF365442A55186D1149A7237 /* Language.swift in Sources */,
