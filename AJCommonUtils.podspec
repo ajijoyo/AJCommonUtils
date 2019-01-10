@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AJCommonUtils'
-    s.version          = '0.1.2'
+    s.version          = '0.1.3'
     s.summary          = 'Common Utility on iOS Development'
     s.swift_version    = '4.2'
     
