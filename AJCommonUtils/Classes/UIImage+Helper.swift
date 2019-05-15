@@ -29,7 +29,7 @@ public extension UIImage {
     ///
     /// - Parameter color: UIColor
     /// - Returns: Create New Image With Color
-    func tintColor(color:UIColor) -> UIImage? {
+    func tintColor(_ color: UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale);
         let context = UIGraphicsGetCurrentContext();
         
@@ -55,7 +55,7 @@ public extension UIImage {
     ///
     /// - Parameter width: CGFloat value
     /// - Returns: New Image with porpotional size
-    func resize(width:CGFloat) -> UIImage?{
+    func resize(width: CGFloat) -> UIImage?{
         if size.width < width { return self }
         let scale = width / size.width
         let height = size.height * scale
