@@ -23,7 +23,8 @@ AJCommonUtils is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AJCommonUtils'
+pod 'AJCommonUtils' //for swift 5
+pod 'AJCommonUtils', '~> 0.1.3' //for swift 4++
 ```
 
 ## Used
