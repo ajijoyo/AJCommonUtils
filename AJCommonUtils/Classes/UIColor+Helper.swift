@@ -33,8 +33,8 @@ public extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
     
-    convenience init(R:Int, G:Int, B:Int, alpha:CGFloat = 1.0 ) {
-        self.init(red:CGFloat(R/255), green:CGFloat(G/255), blue:CGFloat(B/255), alpha:alpha)
+    convenience init(R: CGFloat, G: CGFloat, B: CGFloat, alpha: CGFloat = 1.0 ) {
+        self.init(red: R/255.0, green: G/255.0, blue: B/255.0, alpha: alpha)
     }
     
     
