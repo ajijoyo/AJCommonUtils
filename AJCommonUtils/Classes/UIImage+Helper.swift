@@ -29,26 +29,25 @@ public extension UIImage {
     ///
     /// - Parameter color: UIColor
     /// - Returns: Create New Image With Color
-    func tintColor(_ color: UIColor) -> UIImage? {
-        UIGraphicsBeginImageContextWithOptions(self.size, false, UIScreen.main.scale);
-        let context = UIGraphicsGetCurrentContext();
+    func tintColor(_ color: UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        color.setFill()
         
+        let context = UIGraphicsGetCurrentContext()
         context?.translateBy(x: 0, y: self.size.height)
         context?.scaleBy(x: 1.0, y: -1.0)
+        context?.setBlendMode(CGBlendMode.normal)
         
-        let rect = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
-        
-        // draw alpha-mask
-        context?.setBlendMode(.normal)
-        context?.draw(self.cgImage!, in: rect)
-        
-        // draw tint color, preserving alpha values of original image
-        context?.setBlendMode(.sourceIn)
-        color.setFill()
+        let rect = CGRect(origin: .zero, size: CGSize(width: self.size.width, height: self.size.height))
+        context?.clip(to: rect, mask: self.cgImage!)
         context?.fill(rect)
-        let coloredImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        return coloredImage;
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        if let new = newImage {
+            return new
+        }
+        return self
     }
     
     /// Create New Image with New Size with porpotial ratio

@@ -12,6 +12,7 @@ import AJCommonUtils
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,8 +25,7 @@ class ViewController: UIViewController {
             print("iphone doesnt have notch")
         }
         
-        let image = UIImage(QRcode: "qrcode")
-        
+        imageView.image = UIImage(named: "ic_camera")?.tintColor(.red)
     }
 
     override func didReceiveMemoryWarning() {
